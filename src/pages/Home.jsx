@@ -102,7 +102,7 @@ const Home = () => {
     const updatePrices = async () => {
       try {
         // const newPrices = await axios.get('https://ttrading.onrender.com/api/crypto/prices/');
-         const newPrices = await axios.get(API_CRYPTO_PRICES);
+        const newPrices = await axios.get(API_CRYPTO_PRICES);
         const pricesData = newPrices.data.reduce((acc, current) => {
           acc[current.symbol] = current;
           return acc;
@@ -136,6 +136,7 @@ const Home = () => {
           <div className="container">
             <a href="#" className="logo">
               <img
+
                 src="/assets/img/logo_qui.png"
                 width={190}
                 height={190}
@@ -153,6 +154,11 @@ const Home = () => {
                 <li className="navbar-item">
                   <a href="#satis" className="navbar-link" data-nav-link="">
                     Beneficios
+                  </a>
+                </li>
+                <li className="navbar-item">
+                  <a href="#plans" className="navbar-link" data-nav-link="">
+                    Planes
                   </a>
                 </li>
                 <li className="navbar-item">
@@ -208,6 +214,7 @@ const Home = () => {
               <div className="container">
                 <div className="hero-content ">
                   <h1 className="h1 hero-title ">
+
                   Facturación
                   </h1>
                   <h1 className="h1hero-title2">
@@ -215,6 +222,7 @@ const Home = () => {
                   </h1>
                   <p className="hero-text">
                   Descarga de forma instantánea, rápida y segura tus facturas de cualquier negocio a través de nuestra app móvil.
+
                   </p>
                   <a href="/login" className="btn btn-primary">
                     Pruébala Gratis
@@ -275,18 +283,16 @@ const Home = () => {
                               </data>
                               {/* Utiliza una condición para determinar si el porcentaje es positivo o negativo */}
                               <div
-                                className={`badge ${
-                                  coinData.last7Days &&
-                                  coinData.last7Days > 0
+                                className={`badge ${coinData.last7Days &&
+                                    coinData.last7Days > 0
                                     ? "green"
                                     : "red"}
                                 `}
                               >
-                                {`${
-                                  coinData.last7Days && coinData.last7Days > 0
+                                {`${coinData.last7Days && coinData.last7Days > 0
                                     ? "+"
                                     : ""
-                                }${coinData.last7Days}%`}
+                                  }${coinData.last7Days}%`}
                               </div>
                             </div>
                           </div>
@@ -337,7 +343,7 @@ const Home = () => {
                         </th>
 
                         <th className="table-heading" scope="col">
-                          Capital 
+                          Capital
                         </th>
                         <th className="table-heading" scope="col">
                           Últimos 7 días
@@ -398,7 +404,7 @@ const Home = () => {
                               style={{
                                 color:
                                   coinData.last24Hours &&
-                                  coinData.last24Hours > 0
+                                    coinData.last24Hours > 0
                                     ? "green"
                                     : "red",
                               }}
@@ -610,6 +616,58 @@ const Home = () => {
             {/* 
     - #APP
   */}
+            <section
+              className="section app"
+              id="refers"
+              aria-label="app"
+              data-section=""
+            >
+              <div className="container">
+                <div className="app-content">
+                  <h2 className="h2 section-title">Sistema de referencia</h2>
+                  <p className="section-text"></p>
+                  <ul className="section-list">
+                    <li className="section-item">
+                      <div className="title-wrapper">
+                        <ion-icon name="checkmark-circle" aria-hidden="true" />
+                        <h3 className="h3 item-title">Programa de afiliados</h3>
+                      </div>
+                      <p className="item-text">
+                        Nuestro programa de afiliados es sencillo, a medida que
+                        más personas utilicen tu enlace de referencia y realicen
+                        su primer depósito obtendrás más beneficios en nuestra
+                        plataforma.
+                      </p>
+                    </li>
+                    <li className="section-item">
+                      <div className="title-wrapper">
+                        <ion-icon name="checkmark-circle" aria-hidden="true" />
+                        <h3 className="h3 item-title">
+                          Maximiza tus Ganancias
+                        </h3>
+                      </div>
+                      <p className="item-text">
+                        Tus ganancias aumentarán y podrás sacar mas provecho a
+                        nuestros servicios.
+                      </p>
+                    </li>
+                  </ul>
+                  <a href="/login" className="btn btn-primary">
+                    Iniciar ahora
+                  </a>
+                </div>
+                <div className="app-banner">
+                  <img
+                    src="/assets/img/app-banner.png"
+                    width={618}
+                    height={526}
+                    loading="lazy"
+                    alt="app banner"
+                    className="w-100"
+                  />
+                </div>
+              </div>
+            </section>
             <section
               className="section app"
               id="refers"
