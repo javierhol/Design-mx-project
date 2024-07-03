@@ -3,6 +3,7 @@ import "./assets/css/style.css";
 import axios from "axios";
 import { API_CRYPTO_PRICES } from "../config/api";
 
+
 const Home = () => {
   useEffect(() => {
     const addEventOnElem = function (elem, type, callback) {
@@ -135,12 +136,12 @@ const Home = () => {
           <div className="container">
             <a href="#" className="logo">
               <img
-                src="/assets/img/stock-market.png"
-                width={32}
-                height={32}
-                alt="T-Trading logo"
+                src="/assets/img/logo_qui.png"
+                width={190}
+                height={190}
+                alt="Quickbyll"
               />
-              T-Trading
+          
             </a>
             <nav className="navbar" data-navbar="">
               <ul className="navbar-list">
@@ -151,17 +152,22 @@ const Home = () => {
                 </li>
                 <li className="navbar-item">
                   <a href="#satis" className="navbar-link" data-nav-link="">
-                    Resultados
+                    Beneficios
                   </a>
                 </li>
                 <li className="navbar-item">
                   <a href="#about" className="navbar-link" data-nav-link="">
-                    Sobre Nosotros
+                    Planes
                   </a>
                 </li>
                 <li className="navbar-item">
                   <a href="#refers" className="navbar-link" data-nav-link="">
-                    Referidos
+                    Q&A
+                  </a>
+                </li>
+                <li className="navbar-item">
+                  <a href="#refers" className="navbar-link" data-nav-link="">
+                   Tutoriales
                   </a>
                 </li>
                 <li className="navbar-item">
@@ -174,6 +180,12 @@ const Home = () => {
                     Contactanos
                   </a>
                 </li>
+                {/* <li className="navbar-item">
+                  <a href="#refers" className="navbar-link" data-nav-link="">
+                   Tutoriales
+                  </a>
+                </li> */}
+                
               </ul>
             </nav>
             <button
@@ -186,7 +198,7 @@ const Home = () => {
               <span className="line line-3" />
             </button>
             <a href="/login" className="btn btn-outline">
-              Iniciar
+            Registrar
             </a>
           </div>
         </header>
@@ -196,20 +208,24 @@ const Home = () => {
               <div className="container">
                 <div className="hero-content ">
                   <h1 className="h1 hero-title ">
-                    ¡Gana y retira en cualquier momento!
+                  Facturación
+                  </h1>
+                  <h1 className="h1hero-title2">
+                  instantánea
                   </h1>
                   <p className="hero-text">
-                    Obtén el 5% diariamente gracias al comercio de criptomoneda.
+                  Descarga de forma instantánea, rápida y segura tus facturas de cualquier negocio a través de nuestra app móvil.
                   </p>
                   <a href="/login" className="btn btn-primary">
-                    Iniciar ahora
+                    Pruébala Gratis
                   </a>
                 </div>
                 <figure className="hero-banner">
+                 
                   <img
-                    src="/assets/img/hero-banner.png"
-                    width={570}
-                    height={448}
+                    src="/assets/img/portada-facturacion.png"
+                    width={610}
+                    height={488}
                     alt="hero banner"
                     className="w-100"
                   />

@@ -8,7 +8,7 @@
   ) !important;
 
   --ag-header-background-color: rgb(67, 76, 86);
-  --ag-odd-row-background-color: rgb(0, 0, 0, 0.03);
+  --ag-odd-row-background-color: rgba(0, 0, 0, 0.03);
 
   --ag-header-column-resize-handle-color: rgb(126, 46, 132);
 
