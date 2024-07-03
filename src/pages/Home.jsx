@@ -101,7 +101,7 @@ const Home = () => {
     const updatePrices = async () => {
       try {
         // const newPrices = await axios.get('https://ttrading.onrender.com/api/crypto/prices/');
-         const newPrices = await axios.get(API_CRYPTO_PRICES);
+        const newPrices = await axios.get(API_CRYPTO_PRICES);
         const pricesData = newPrices.data.reduce((acc, current) => {
           acc[current.symbol] = current;
           return acc;
@@ -135,12 +135,11 @@ const Home = () => {
           <div className="container">
             <a href="#" className="logo">
               <img
-                src="/assets/img/stock-market.png"
-                width={32}
-                height={32}
-                alt="T-Trading logo"
+                src="/assets/img/logo.png"
+                width={150}
+                height={50}
+                alt=" logo"
               />
-              T-Trading
             </a>
             <nav className="navbar" data-navbar="">
               <ul className="navbar-list">
@@ -152,6 +151,11 @@ const Home = () => {
                 <li className="navbar-item">
                   <a href="#satis" className="navbar-link" data-nav-link="">
                     Resultados
+                  </a>
+                </li>
+                <li className="navbar-item">
+                  <a href="#plans" className="navbar-link" data-nav-link="">
+                    Planes
                   </a>
                 </li>
                 <li className="navbar-item">
@@ -196,10 +200,10 @@ const Home = () => {
               <div className="container">
                 <div className="hero-content ">
                   <h1 className="h1 hero-title ">
-                    ¡Gana y retira en cualquier momento!
+                    Facturación <span className="color-orange">instantánea</span>
                   </h1>
                   <p className="hero-text">
-                    Obtén el 5% diariamente gracias al comercio de criptomoneda.
+                    Descarga de forma instantánea, rápida y segura tus facturas de cualquier negocio a través de nuestra app móvil.
                   </p>
                   <a href="/login" className="btn btn-primary">
                     Iniciar ahora
@@ -259,18 +263,16 @@ const Home = () => {
                               </data>
                               {/* Utiliza una condición para determinar si el porcentaje es positivo o negativo */}
                               <div
-                                className={`badge ${
-                                  coinData.last7Days &&
-                                  coinData.last7Days > 0
+                                className={`badge ${coinData.last7Days &&
+                                    coinData.last7Days > 0
                                     ? "green"
                                     : "red"}
                                 `}
                               >
-                                {`${
-                                  coinData.last7Days && coinData.last7Days > 0
+                                {`${coinData.last7Days && coinData.last7Days > 0
                                     ? "+"
                                     : ""
-                                }${coinData.last7Days}%`}
+                                  }${coinData.last7Days}%`}
                               </div>
                             </div>
                           </div>
@@ -321,7 +323,7 @@ const Home = () => {
                         </th>
 
                         <th className="table-heading" scope="col">
-                          Capital 
+                          Capital
                         </th>
                         <th className="table-heading" scope="col">
                           Últimos 7 días
@@ -382,7 +384,7 @@ const Home = () => {
                               style={{
                                 color:
                                   coinData.last24Hours &&
-                                  coinData.last24Hours > 0
+                                    coinData.last24Hours > 0
                                     ? "green"
                                     : "red",
                               }}
@@ -594,6 +596,58 @@ const Home = () => {
             {/* 
     - #APP
   */}
+            <section
+              className="section app"
+              id="refers"
+              aria-label="app"
+              data-section=""
+            >
+              <div className="container">
+                <div className="app-content">
+                  <h2 className="h2 section-title">Sistema de referencia</h2>
+                  <p className="section-text"></p>
+                  <ul className="section-list">
+                    <li className="section-item">
+                      <div className="title-wrapper">
+                        <ion-icon name="checkmark-circle" aria-hidden="true" />
+                        <h3 className="h3 item-title">Programa de afiliados</h3>
+                      </div>
+                      <p className="item-text">
+                        Nuestro programa de afiliados es sencillo, a medida que
+                        más personas utilicen tu enlace de referencia y realicen
+                        su primer depósito obtendrás más beneficios en nuestra
+                        plataforma.
+                      </p>
+                    </li>
+                    <li className="section-item">
+                      <div className="title-wrapper">
+                        <ion-icon name="checkmark-circle" aria-hidden="true" />
+                        <h3 className="h3 item-title">
+                          Maximiza tus Ganancias
+                        </h3>
+                      </div>
+                      <p className="item-text">
+                        Tus ganancias aumentarán y podrás sacar mas provecho a
+                        nuestros servicios.
+                      </p>
+                    </li>
+                  </ul>
+                  <a href="/login" className="btn btn-primary">
+                    Iniciar ahora
+                  </a>
+                </div>
+                <div className="app-banner">
+                  <img
+                    src="/assets/img/app-banner.png"
+                    width={618}
+                    height={526}
+                    loading="lazy"
+                    alt="app banner"
+                    className="w-100"
+                  />
+                </div>
+              </div>
+            </section>
             <section
               className="section app"
               id="refers"
