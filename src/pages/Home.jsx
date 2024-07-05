@@ -583,15 +583,87 @@ const Home = () => {
       - #FOOTER
     */}
         <footer className="footer" id="contact">
-          <div className="footer-bottom">
-            <div className="container">
-              <p className="copyright">
-                © Copyright Quickbyll. Todos los derechos reservados.
-              </p>
-              <p className="copyright">
-                Xpressbill, S.A.P.I de C.V. todos los derechos reservados.
-              </p>
+          <div className="container_footer">
+            <div className="row">
+            
+              <div className="footer-col">
+                <h4>QUICKBYLL</h4>
+                <ul className="ul_footer">
+                  <li><img src="/public/assets/img/icon_orange.png"  width={210}
+                    height={180} alt="QUICKBYLL" /></li>
+                </ul>
+          
+              </div>
+
+              <div className="footer-col">
+                <h4>Mapa del sitio</h4>
+                <ul  className="ul_footer">
+                  <li><a href="#"> Inicio</a></li>
+                  <li><a href="#">¿Cómo funciona?</a></li>
+                  <li><a href="">Precios</a></li>
+                  <li><a href="">Q&A</a></li>
+                  <li><a href="">Contacto</a></li>
+
+                </ul>
+          
+
+              </div>
+              <div className="footer-col">
+                <h4>Intereses</h4>
+                <ul >
+                  <li><a href="#">Tutoriales</a></li>
+                  <li><a href="#">Iniciar Sesión</a></li>
+                  <li><a href="">Precios</a></li>
+                  <li><a href="">Q&A</a></li>
+                  <li><a href="">Contacto</a></li>
+
+                </ul>
+          
+
+              </div>
+              <div className="footer-col">
+                <h4>¡Mantente al Día con Quickbyll!</h4>
+                <ul>
+                <li><a href="#">Síguenos en nuestras redes sociales.</a></li>
+                </ul>
+                 
+                  <div className="social-links2">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="#"><i class="fab fa-skype"></i></a>
+                 <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </div>
+
+               
+
+               
+          
+
+              </div>
+
             </div>
+          </div>
+
+          <div className="footer-legal text-center">
+             <section id="clients" class="clients">
+            <div id="logos" class="container">
+                <article>
+                                            <picture><img src="assets/img/sec01.png" class="img-fluid aos-init aos-animate" alt="" data-aos="zoom-out" data-aos-delay="200"/></picture>
+                                            <picture><img src="assets/img/sec02.png" class="img-fluid aos-init aos-animate" alt="" data-aos="zoom-out" data-aos-delay="400"/></picture>
+                                            <picture><img src="assets/img/sec03.png" class="img-fluid aos-init aos-animate" alt="" data-aos="zoom-out" data-aos-delay="600"/></picture>
+                                    </article>
+            </div>
+        </section>
+        <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-center">
+            <div class="d-flex flex-column align-items-center text-center">
+                <div class="copyright">
+                    ©Copyright <strong><span>Quickbyll</span></strong>. Todos los derechos reservados.                </div>
+                <div class="credits text-center">
+                    Xpressbill, S.A.P.I de C.V. todos los derechos reservados.                </div>
+            </div>
+        </div>
+
+
           </div>
         </footer>
       </div>

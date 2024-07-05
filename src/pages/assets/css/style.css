@@ -913,9 +913,128 @@ max-height: 20rem;
 
 
 .footer{
-  margin-bottom: 80px;
-  border: 2px solid red;
-  background-color: aqua;
+  /* margin-bottom: 80px; */
+  /* border: 2px solid red; */
+  /* position: absolute; */
+  background-color: #274589;
+  padding: 70px 0;
+  height: 340px;
+}
+.container_footer{
+
+max-width: 1230px;
+ /* background-color: antiquewhite; */
+ margin:auto;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ul_footer{
+
+list-style: none;
+}
+
+.footer-col {
+ width: 25%;
+ padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: bold;
+  position: relative;
+  /* background-color: red; */
+ }
+
+ 
+.footer-col h4::before {
+ content: "";
+ position: absolute;
+ left: 0;
+ bottom:  -10px;
+ background-color: orangered;
+ height: 2px;
+ box-sizing: border-box;
+ width: 60px;
+ }
+
+ .footer-col ul li:not(:last-child) {
+
+  margin-bottom: 10px;
+ }
+ .footer-col ul li a {
+
+ font-size: 16px;
+ text-transform: capitalize;
+ /* color: #ffffff; */
+ text-decoration: none;
+ font-weight: 300;
+ color: #ccc9c9;
+ display: block;
+ transition: all 0.3s ease;
+ }
+
+ .footer-col ul li a:hover{
+  color: #ffffff;
+  padding-left: 9px;
+ }
+
+ .footer-col .social-links2 a{
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color:  rgb(255, 255, 255,0.2);
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+ }
+
+ .footer-col .social-links2 a:hover{
+ color: #ffffff;
+ background-color: orangered;
+
+ }
+
+ footer .footer-legal {
+  padding: 30px 0;
+  background: #51585f;
+}
+
+.text-center {
+  text-align: center !important;
+}
+.clients {
+  padding: 0 0 60px 0;
+}
+
+#logos {
+  display: flex;
+  justify-content: center;
+}
+
+#logos article {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+}
+#logos article picture {
+  width: 20%;
+}
+.flex-column {
+  flex-direction: column !important;
+  color: white;
 }
 .footer-top {
   background-color: var(--eerie-black-1);
