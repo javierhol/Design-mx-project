@@ -3,6 +3,7 @@ import "./assets/css/style.css";
 import axios from "axios";
 import { API_CRYPTO_PRICES } from "../config/api";
 import Pricing from "./Pricing";
+import QA from "./QA";
 
 
 const Home = () => {
@@ -327,7 +328,7 @@ const Home = () => {
                 <div className="about-content">
                   <h2 className="h2 section-title">Resultados Satisfactorios</h2>
                   <p className="section-text">
-                  Al acelerar los procesos internos de tu empresa, como la facturación, optimizarás el uso de los recursos disponibles y reducirás el tiempo necesario para completar las tareas. Esto resulta en una mayor eficiencia operativa, lo que implica que podrás realizar más trabajo en menos tiempo y con menor esfuerzo.
+                    Al acelerar los procesos internos de tu empresa, como la facturación, optimizarás el uso de los recursos disponibles y reducirás el tiempo necesario para completar las tareas. Esto resulta en una mayor eficiencia operativa, lo que implica que podrás realizar más trabajo en menos tiempo y con menor esfuerzo.
                   </p>
                   <ul className="section-list">
                     <li className="section-item">
@@ -336,25 +337,25 @@ const Home = () => {
                         <h3 className="h3 list-title">Reduccion de costos</h3>
                       </div>
                       <p className="item-text">
-                      Al eliminar la necesidad de imprimir facturas en papel
-                      y enviarlas por correo, tu empresa y tus clientes pueden
-                      ahorrar en gastos de impresión, envío y almacenamiento.
+                        Al eliminar la necesidad de imprimir facturas en papel
+                        y enviarlas por correo, tu empresa y tus clientes pueden
+                        ahorrar en gastos de impresión, envío y almacenamiento.
                       </p>
                     </li>
                     <li className="section-item">
                       <div className="title-wrapper">
                         <ion-icon name="checkmark-circle" aria-hidden="true" />
                         <h3 className="h3 list-title">
-                        Eficiencia operativa
+                          Eficiencia operativa
                         </h3>
                       </div>
                       <p className="item-text">
-                      Al acelerar los procesos internos de tu empresa, como la facturación, optimizarás el uso de los recursos disponibles y reducirás el tiempo necesario para completar las tareas. Esto resulta en una mayor eficiencia operativa, lo que implica que podrás realizar más trabajo en menos tiempo y con menor esfuerzo.
+                        Al acelerar los procesos internos de tu empresa, como la facturación, optimizarás el uso de los recursos disponibles y reducirás el tiempo necesario para completar las tareas. Esto resulta en una mayor eficiencia operativa, lo que implica que podrás realizar más trabajo en menos tiempo y con menor esfuerzo.
                       </p>
                     </li>
                   </ul>
                   <a href="/login" className="btn btn-primary">
-                    Iniciar ahora
+                    Pruébala Gratis
                   </a>
                 </div>
               </div>
@@ -370,10 +371,198 @@ const Home = () => {
               aria-label="about"
               data-section=""
             >
-              <Pricing/>
+              <Pricing />
+
+            </section>
+
+
+            <section
+              className="section app"
+              id="refers"
+              aria-label="app"
+              data-section=""
+            >
+              <h1 className="h1_QA">Preguntas Frecuentes</h1>
+              <div className="container_qa">
+              <div className="container">
+                <div className="app-content">
+                  <div className="acordion">
+
+                    <div className="accordion-item" id="question1">
+
+
+                      <a className="accordion-link" href="#question1">
+                           <p>
+                           ¿Qué diferencias existen entre el plan individual y business?
+                           </p>
+                      
+                        <i className="icon ion-md-add">
+                          <ion-icon name="add"></ion-icon>
+                        </i>
+
+                        <i className="icon ion-md-remove">
+                          <ion-icon name="remove"></ion-icon>
+                        </i>
+
+
+                      </a>
+                      <div className="answer">
+                        <p>
+                          El individual está diseñado solamente para recibir y administrar tus facturas. En cambio el business tiene todo lo del individual pero además puedes emitir y administrar tus facturas.
+                        </p>
+
+                      </div>
+                    </div>
+
+
+                    <div className="accordion-item" id="question2">
+
+
+                      <a className="accordion-link" href="#question2">
+                            <p>
+                            ¿Puedo cambiarme de plan individual al business?
+                            </p>
+                 
+                        <i className="icon ion-md-add">
+                          <ion-icon name="add"></ion-icon>
+                        </i>
+
+                        <i className="icon ion-md-remove">
+                          <ion-icon name="remove"></ion-icon>
+                        </i>
+
+                      </a>
+                      <div className="answer">
+                        <p>
+                          Sí, el cambio es gratuito y es al instante, no hay necesidad de crear otra cuenta ya que podrás utilizar el mismo correo electrónico
+                        </p>
+                      </div>
+                    </div>
+
+
+                    <div className="accordion-item" id="question3">
+
+
+                      <a className="accordion-link" href="#question3">
+                        <p>
+                        ¿Qué significa Quickbyll ID?
+                        </p>
+                       
+                        <i className="icon ion-md-add">
+                          <ion-icon name="add"></ion-icon>
+                        </i>
+
+                        <i className="icon ion-md-remove">
+                          <ion-icon name="remove"></ion-icon>
+                        </i>
+                      </a>
+                      <div className="answer">
+                        <p>
+                          Es una identificación digital que hace las veces de tu constancia fiscal, que contiene sólo los datos más importantes que necesitas para recibir facturas y compartir con terceros.</p>
+                      </div>
+                    </div>
+
+                    <div className="accordion-item" id="question4">
+
+
+                      <a className="accordion-link" href="#question4">
+
+                        <p>
+                          ¿Es Quickbyll gratuito o hay algún costo asociado?
+                        </p>
+
+                        <i className="icon ion-md-add">
+                          <ion-icon name="add"></ion-icon>
+                        </i>
+
+                        <i className="icon ion-md-remove">
+                          <ion-icon name="remove"></ion-icon>
+                        </i>
+                      </a>
+                      <div className="answer">
+                        <p>
+
+                          Por el momento solo se ofrecen versiones gratuitas en servicios, regalando 50 timbres sin vigencia por el primer registro. En caso de agotar tus timbres gratuitos, podrás comprar más a un bajo costo dentro del portal.</p>
+                      </div>
+                    </div>
+
+                    <div className="accordion-item" id="question5">
+
+
+                      <a className="accordion-link" href="#question5">
+
+                        <p>
+                        ¿Necesito descargar una aplicación para utilizar sus servicios?
+                        </p>
+                    
+
+                        <i className="icon ion-md-add">
+                          <ion-icon name="add"></ion-icon>
+                        </i>
+
+                        <i className="icon ion-md-remove">
+                          <ion-icon name="remove"></ion-icon>
+                        </i>
+                      </a>
+                      <div className="answer">
+                        <p>
+
+                          No, puedes utilizar el portal y aplicación móvil. Sin embargo, te recomendamos que descargues la app móvil ya que es más práctica, intuitiva y de fácil acceso.</p>
+                      </div>
+                    </div>
+
+                    <div className="accordion-item" id="question7">
+
+
+                      <a className="accordion-link" href="#question7">
+
+                           <p>
+                           ¿Cómo garantizan la seguridad de los datos de facturación?
+                           </p>
+                       
+
+                        <i className="icon ion-md-add">
+                          <ion-icon name="add"></ion-icon>
+                        </i>
+
+                        <i className="icon ion-md-remove">
+                          <ion-icon name="remove"></ion-icon>
+                        </i>
+                      </a>
+                      <div className="answer">
+                        <p>
+
+                          En Quickbyll, mantenemos tus datos fiscales de facturación seguros utilizando un enfoque integral de seguridad de la información. Esto incluye el cifrado de datos, el monitoreo continuo de la red e implementación de firewalls.
+                        </p>
+                      </div>
+                    </div>
+
+                  </div>
+
+
+
+
+
+                </div>
+
+
+              </div>
+
+              <div className="app-banner">
+                  <img
+                    src="/assets/img/app-banner1.png"
+                    width={8}
+                    height={6}
+                    loading="lazy"
+                    alt="app banner"
+                    className="w-100"
+                  />
+                </div>
+              </div>
+
              
             </section>
-            <section
+            {/* <section
               className="section app"
               id="refers"
               aria-label="app"
@@ -381,65 +570,100 @@ const Home = () => {
             >
               <div className="container">
                 <div className="app-content">
-                  <h2 className="h2 section-title">Sistema de referencia</h2>
-                  <p className="section-text"></p>
-                  <ul className="section-list">
-                    <li className="section-item">
-                      <div className="title-wrapper">
-                        <ion-icon name="checkmark-circle" aria-hidden="true" />
-                        <h3 className="h3 item-title">Programa de afiliados</h3>
-                      </div>
-                      <p className="item-text">
-                        Nuestro programa de afiliados es sencillo, a medida que
-                        más personas utilicen tu enlace de referencia y realicen
-                        su primer depósito obtendrás más beneficios en nuestra
-                        plataforma.
-                      </p>
-                    </li>
-                    <li className="section-item">
-                      <div className="title-wrapper">
-                        <ion-icon name="checkmark-circle" aria-hidden="true" />
-                        <h3 className="h3 item-title">
-                          Maximiza tus Ganancias
-                        </h3>
-                      </div>
-                      <p className="item-text">
-                        Tus ganancias aumentarán y podrás sacar mas provecho a
-                        nuestros servicios.
-                      </p>
-                    </li>
-                  </ul>
-                  <a href="/login" className="btn btn-primary">
-                    Iniciar ahora
-                  </a>
+
+                  
+
+              
                 </div>
-                <div className="app-banner">
-                  <img
-                    src="/assets/img/app-banner1.png"
-                    width={618}
-                    height={526}
-                    loading="lazy"
-                    alt="app banner"
-                    className="w-100"
-                  />
-                </div>
-              </div>
-            </section>
+              
+            </section> */}
           </article>
         </main>
         {/* 
       - #FOOTER
     */}
         <footer className="footer" id="contact">
-          <div className="footer-bottom">
-            <div className="container">
-              <p className="copyright">
-                © Copyright Quickbyll. Todos los derechos reservados.
-              </p>
-              <p className="copyright">
-                Xpressbill, S.A.P.I de C.V. todos los derechos reservados.
-              </p>
+          <div className="container_footer">
+            <div className="row">
+            
+              <div className="footer-col">
+                <h4>QUICKBYLL</h4>
+                <ul className="ul_footer">
+                  <li><img src="/public/assets/img/icon_orange.png"  width={210}
+                    height={180} alt="QUICKBYLL" /></li>
+                </ul>
+          
+              </div>
+
+              <div className="footer-col">
+                <h4>Mapa del sitio</h4>
+                <ul  className="ul_footer">
+                  <li><a href="#"> Inicio</a></li>
+                  <li><a href="#">¿Cómo funciona?</a></li>
+                  <li><a href="">Precios</a></li>
+                  <li><a href="">Q&A</a></li>
+                  <li><a href="">Contacto</a></li>
+
+                </ul>
+          
+
+              </div>
+              <div className="footer-col">
+                <h4>Intereses</h4>
+                <ul >
+                  <li><a href="#">Tutoriales</a></li>
+                  <li><a href="#">Iniciar Sesión</a></li>
+                  <li><a href="">Precios</a></li>
+                  <li><a href="">Q&A</a></li>
+                  <li><a href="">Contacto</a></li>
+
+                </ul>
+          
+
+              </div>
+              <div className="footer-col">
+                <h4>¡Mantente al Día con Quickbyll!</h4>
+                <ul>
+                <li><a href="#">Síguenos en nuestras redes sociales.</a></li>
+                </ul>
+                 
+                  <div className="social-links2">
+                 <a href="#"><i class="fab fa-facebook-f"></i></a>
+                 <a href="#"><i class="fab fa-instagram"></i></a>
+                 <a href="#"><i class="fab fa-skype"></i></a>
+                 <a href="#"><i class="fab fa-linkedin"></i></a>
+                  </div>
+
+               
+
+               
+          
+
+              </div>
+
             </div>
+          </div>
+
+          <div className="footer-legal text-center">
+             <section id="clients" class="clients">
+            <div id="logos" class="container">
+                <article>
+                                            <picture><img src="assets/img/sec01.png" class="img-fluid aos-init aos-animate" alt="" data-aos="zoom-out" data-aos-delay="200"/></picture>
+                                            <picture><img src="assets/img/sec02.png" class="img-fluid aos-init aos-animate" alt="" data-aos="zoom-out" data-aos-delay="400"/></picture>
+                                            <picture><img src="assets/img/sec03.png" class="img-fluid aos-init aos-animate" alt="" data-aos="zoom-out" data-aos-delay="600"/></picture>
+                                    </article>
+            </div>
+        </section>
+        <div class="container d-flex flex-column flex-lg-row justify-content-center align-items-center">
+            <div class="d-flex flex-column align-items-center text-center">
+                <div class="copyright">
+                    ©Copyright <strong><span>Quickbyll</span></strong>. Todos los derechos reservados.                </div>
+                <div class="credits text-center">
+                    Xpressbill, S.A.P.I de C.V. todos los derechos reservados.                </div>
+            </div>
+        </div>
+
+
           </div>
         </footer>
       </div>
