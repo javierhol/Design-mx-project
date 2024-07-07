@@ -305,7 +305,7 @@ const Home = () => {
               data-section=""
             >
               <iframe
-                className="rounded-md"
+                className="rounded-2xl"
                 width={900}
                 height={600}
                 src="https://www.youtube.com/embed/pknyGVl-_Fg?si=li1Sh3Msvo5Xtkc1"
