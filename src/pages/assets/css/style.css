@@ -188,13 +188,13 @@ body.active {
 }
 
 .btn {
-  color: gray;
+  color: #27448a;
   border-radius: 50px;
 }
 
 .btn-outline {
   font-size: var(--fs-6);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-700);
   border: 2px solid orange;
   padding: 5px 30px;
   transition: var(--transition-1);
@@ -260,15 +260,14 @@ body.active {
   font-weight: bold;
   font-size: 100px;
   line-height: 0.8;
-  color: rgb(236, 104, 56);
-
+  color:#ff6136;
 }
 
 .h1 {
   font-weight: bold;
   font-size: 80px;
   line-height: 0.9;
-
+  color: #27448a;
 }
 
 .h2,
@@ -276,18 +275,13 @@ body.active {
   /* color: var(--white); */
   color: #274589;
   line-height: 1.1;
-
-
-
 }
 
-/* .h1 { font-size: var(--fs-1); } */
 
 .h2 {
   font-size: var(--fs-2);
 }
 
-/* .h3 { font-size: var(--fs-3); } */
 
 .w-100 {
   width: 90%;
@@ -855,9 +849,12 @@ body.active {
   #APP
 \*-----------------------------------*/
 
+.plans {
+  background-color: var(--eerie-black-2);
+}
+
 .app {
-  /* overflow: hidden; */
-  /* padding-block-end: 0; */
+  background-color: var(--eerie-black-1 );
 }
 
 .h1_QA{
@@ -1010,9 +1007,9 @@ body.active {
   border-radius: 50px;
 }
 
-
-
-
+.contact {
+  background-color: var(--eerie-black-2);
+}
 
 /*-----------------------------------*\
   #FOOTER
@@ -1658,6 +1655,7 @@ address.footer-contact-link {
 
   .navbar-link {
     font-size: unset;
+    color: #27448a ;
   }
 
 
