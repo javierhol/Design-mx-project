@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 import "./assets/css/style.css";
-import axios from "axios";
-import { API_CRYPTO_PRICES } from "../config/api";
+// import axios from "axios";
+// import { API_CRYPTO_PRICES } from "../config/api";
 import Pricing from "./Pricing";
 import Contact from "./Contact";
-
+import QA from "./QA";
 const Home = () => {
   useEffect(() => {
     const addEventOnElem = function (elem, type, callback) {
@@ -97,34 +97,11 @@ const Home = () => {
     addEventOnElem(window, "scroll", scrollReveal);
   }, []);
 
-  const [prices, setPrices] = useState({});
 
-  useEffect(() => {
-    const updatePrices = async () => {
-      try {
-        // const newPrices = await axios.get('https://ttrading.onrender.com/api/crypto/prices/');
-        const newPrices = await axios.get(API_CRYPTO_PRICES);
-        const pricesData = newPrices.data.reduce((acc, current) => {
-          acc[current.symbol] = current;
-          return acc;
-        }, {});
 
-        // Actualiza el estado con el nuevo objeto
-        setPrices(pricesData);
-      } catch (error) {
-        // Manejar errores si es necesario
-      }
-    };
 
-    // Llama a la función de obtención de precios al montar el componente
-    updatePrices();
 
-    // Establece un intervalo para actualizar los precios cada 5 minutos
-    const intervalId = setInterval(updatePrices, 24 * 60 * 60 * 1000);
 
-    // Limpia el intervalo al desmontar el componente
-    return () => clearInterval(intervalId);
-  }, []);
 
   return (
     <>
@@ -392,179 +369,10 @@ const Home = () => {
             >
               <Pricing />
             </section>
-
-            <section
-              className="section app"
-              id="refers"
-              aria-label="app"
-              data-section=""
-            >
-              <h1 className="h1_QA">Preguntas Frecuentes</h1>
-              <div className="container_qa">
-                <div className="container">
-                  <div className="app-content">
-                    <div className="acordion">
-                      <div className="accordion-item" id="question1">
-                        <a className="accordion-link" href="#question1">
-                          <p>
-                            ¿Qué diferencias existen entre el plan individual y
-                            business?
-                          </p>
-
-                          <i className="icon ion-md-add">
-                            <ion-icon name="add"></ion-icon>
-                          </i>
-
-                          <i className="icon ion-md-remove">
-                            <ion-icon name="remove"></ion-icon>
-                          </i>
-                        </a>
-                        <div className="answer">
-                          <p>
-                            El individual está diseñado solamente para recibir y
-                            administrar tus facturas. En cambio el business
-                            tiene todo lo del individual pero además puedes
-                            emitir y administrar tus facturas.
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="accordion-item" id="question2">
-                        <a className="accordion-link" href="#question2">
-                          <p>
-                            ¿Puedo cambiarme de plan individual al business?
-                          </p>
-
-                          <i className="icon ion-md-add">
-                            <ion-icon name="add"></ion-icon>
-                          </i>
-
-                          <i className="icon ion-md-remove">
-                            <ion-icon name="remove"></ion-icon>
-                          </i>
-                        </a>
-                        <div className="answer">
-                          <p>
-                            Sí, el cambio es gratuito y es al instante, no hay
-                            necesidad de crear otra cuenta ya que podrás
-                            utilizar el mismo correo electrónico
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="accordion-item" id="question3">
-                        <a className="accordion-link" href="#question3">
-                          <p>¿Qué significa Quickbyll ID?</p>
-
-                          <i className="icon ion-md-add">
-                            <ion-icon name="add"></ion-icon>
-                          </i>
-
-                          <i className="icon ion-md-remove">
-                            <ion-icon name="remove"></ion-icon>
-                          </i>
-                        </a>
-                        <div className="answer">
-                          <p>
-                            Es una identificación digital que hace las veces de
-                            tu constancia fiscal, que contiene sólo los datos
-                            más importantes que necesitas para recibir facturas
-                            y compartir con terceros.
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="accordion-item" id="question4">
-                        <a className="accordion-link" href="#question4">
-                          <p>
-                            ¿Es Quickbyll gratuito o hay algún costo asociado?
-                          </p>
-
-                          <i className="icon ion-md-add">
-                            <ion-icon name="add"></ion-icon>
-                          </i>
-
-                          <i className="icon ion-md-remove">
-                            <ion-icon name="remove"></ion-icon>
-                          </i>
-                        </a>
-                        <div className="answer">
-                          <p>
-                            Por el momento solo se ofrecen versiones gratuitas
-                            en servicios, regalando 50 timbres sin vigencia por
-                            el primer registro. En caso de agotar tus timbres
-                            gratuitos, podrás comprar más a un bajo costo dentro
-                            del portal.
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="accordion-item" id="question5">
-                        <a className="accordion-link" href="#question5">
-                          <p>
-                            ¿Necesito descargar una aplicación para utilizar sus
-                            servicios?
-                          </p>
-
-                          <i className="icon ion-md-add">
-                            <ion-icon name="add"></ion-icon>
-                          </i>
-
-                          <i className="icon ion-md-remove">
-                            <ion-icon name="remove"></ion-icon>
-                          </i>
-                        </a>
-                        <div className="answer">
-                          <p>
-                            No, puedes utilizar el portal y aplicación móvil.
-                            Sin embargo, te recomendamos que descargues la app
-                            móvil ya que es más práctica, intuitiva y de fácil
-                            acceso.
-                          </p>
-                        </div>
-                      </div>
-
-                      <div className="accordion-item" id="question7">
-                        <a className="accordion-link" href="#question7">
-                          <p>
-                            ¿Cómo garantizan la seguridad de los datos de
-                            facturación?
-                          </p>
-
-                          <i className="icon ion-md-add">
-                            <ion-icon name="add"></ion-icon>
-                          </i>
-
-                          <i className="icon ion-md-remove">
-                            <ion-icon name="remove"></ion-icon>
-                          </i>
-                        </a>
-                        <div className="answer">
-                          <p>
-                            En Quickbyll, mantenemos tus datos fiscales de
-                            facturación seguros utilizando un enfoque integral
-                            de seguridad de la información. Esto incluye el
-                            cifrado de datos, el monitoreo continuo de la red e
-                            implementación de firewalls.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="app-banner">
-                  <img
-                    src="/assets/img/app-banner1.png"
-                    width={10}
-                    height={6}
-                    loading="lazy"
-                    alt="app banner"
-                    className="w-100"
-                  />
-                </div>
-              </div>
+            <section className="faq-section">
+            <QA />
             </section>
+
             <section
               className="section contact"
               id="contact"
