@@ -31,3 +31,18 @@
   @keyframes l5-2 {
     100% {top:-0.1px}
   }
+
+  input[type="date"].custom-date-input::-webkit-calendar-picker-indicator {
+    filter: invert(27%) sepia(95%) saturate(9000%) hue-rotate(180deg) brightness(93%) contrast(106%);
+  }
+  input[type="date"].custom-date-input::-webkit-inner-spin-button,
+  input[type="date"].custom-date-input::-webkit-clear-button {
+    display: none;
+  }
+  input[type="date"].custom-date-input::-moz-calendar-picker-indicator {
+    filter: invert(27%) sepia(95%) saturate(5638%) hue-rotate(180deg) brightness(93%) contrast(106%);
+  }
+  input[type="date"].custom-date-input {
+    position: relative;
+    color-scheme: dark; 
+  }

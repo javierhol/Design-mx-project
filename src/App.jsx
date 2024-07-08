@@ -5,6 +5,7 @@ import "././index.css";
 import DashboardUser from "./pages/DashboardUser";
 import Recargar from "./components/User/Recargar";
 import Register from "./components/Register";
+import Register2 from "./components/Register2";
 import Login from "./components/Login";
 import Referencias from "./components/User/Referencias";
 import Ajustes from "./components/User/Ajustes";
@@ -53,6 +54,7 @@ function App() {
             }
           />
           <Route path="/Register" element={<Register />} />
+          <Route path="/Register2" element={<Register2 />} />
           <Route path="/Login" element={<Login />} />
           <Route path="/LoginAdmin" element={<LoginAdmin />} />
 
