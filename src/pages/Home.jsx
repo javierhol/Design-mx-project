@@ -97,12 +97,6 @@ const Home = () => {
     addEventOnElem(window, "scroll", scrollReveal);
   }, []);
 
-
-
-
-
-
-
   return (
     <>
       {/* 
@@ -163,7 +157,7 @@ const Home = () => {
               <span className="line line-2" />
               <span className="line line-3" />
             </button>
-            <a href="/login" className="btn btn-outline">
+            <a href="/Register2" className="btn btn-outline">
               Iniciar
             </a>
           </div>
@@ -370,7 +364,7 @@ const Home = () => {
               <Pricing />
             </section>
             <section className="faq-section">
-            <QA />
+              <QA />
             </section>
 
             <section

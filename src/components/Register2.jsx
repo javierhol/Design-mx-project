@@ -7,6 +7,9 @@ function Register2() {
       <div className="bg-white h-full">
         <div className="font-[sans-serif] h-screen">
           <div className="text-center bg-[#050229] min-h-[160px] sm:p-6 p-4">
+            <a className="" href="/">
+              <img src="/assets/img/icon_orange.png"  className="w-20" alt="" />
+            </a>
             <h4 className="sm:text-3xl text-2xl font-bold text-white">
               Crea tu cuenta
             </h4>
@@ -224,7 +227,7 @@ function Register2() {
                     >
                       <input
                         type="checkbox"
-                         class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#ff5521] checked:bg-[#ff5521] checked:before:bg-[#ff5521] hover:before:opacity-10"
+                        class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#ff5521] checked:bg-[#ff5521] checked:before:bg-[#ff5521] hover:before:opacity-10"
                         id="link"
                       />
                       <span class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
@@ -267,7 +270,7 @@ function Register2() {
                     >
                       <input
                         type="checkbox"
-                       class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#ff5521] checked:bg-[#ff5521] checked:before:bg-[#ff5521] hover:before:opacity-10"
+                        class="before:content[''] peer relative h-5 w-5 cursor-pointer appearance-none rounded-md border border-blue-gray-200 transition-all before:absolute before:top-2/4 before:left-2/4 before:block before:h-12 before:w-12 before:-translate-y-2/4 before:-translate-x-2/4 before:rounded-full before:bg-blue-gray-500 before:opacity-0 before:transition-opacity checked:border-[#ff5521] checked:bg-[#ff5521] checked:before:bg-[#ff5521] hover:before:opacity-10"
                         id="link"
                       />
                       <span class="absolute text-white transition-opacity opacity-0 pointer-events-none top-2/4 left-2/4 -translate-y-2/4 -translate-x-2/4 peer-checked:opacity-100">
